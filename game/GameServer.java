@@ -31,7 +31,7 @@ public class GameServer implements Runnable{
 	private int _maxPlayer = 0;
 	private Timer _ReboTimer; // Reboot automatique
 	private Timer _loadActionTimer;
-    private Timer _loadPubTimer; // Pub 
+        private Timer _loadPubTimer; // Pub 
 	
 	public GameServer(String Ip)
 	{
@@ -99,7 +99,7 @@ public class GameServer implements Runnable{
 
 	                public void run() {
 	                    SQLManager.LOAD_ACTION();
-	                    GameServer.addToLog("Les live actions ont ete appliquees");
+	                    GameServer.addToLog("Live Actions applied.");
 	                }
 	            }, CyonEmu.CONFIG_LOAD_DELAY, CyonEmu.CONFIG_LOAD_DELAY);
 	            
